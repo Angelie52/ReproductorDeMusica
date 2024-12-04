@@ -95,3 +95,9 @@
     padding: 17px 16px;
     gap: 8 px;
 }
+
+.main__card__imagen {
+    padding: 10px 10px;
+    gap: 10px;
+    border-radius: 15px;
+}
