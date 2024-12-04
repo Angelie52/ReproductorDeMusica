@@ -1,0 +1,60 @@
+* { /* este es para limpiar la pagina para empezar con un lienzo limpio (seteado)*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    padding: unset;
+    margin: unset;
+    border: unset;
+
+    box-sizing: border-box;
+}
+
+.navbar { /*este es el div del header*/
+    padding: 11px 37px;
+    gap: 180px;
+    background-color: #A80CE8;
+    border-radius: 15px;
+    opacity: 21;
+}
+
+.navbar__nav { /* esta es la barra de navegacion*/
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    gap: auto;
+}
+
+.navbar__nav__list { /*esta es la lista*/
+    display: flex;
+    gap: 105px;
+    list-style: none;
+    color: #fff;
+}
+
+.navbar__nav__container__search {
+    display: flex;
+    align-items: center;
+} 
+
+
+.navbar__nav__container__search__input {
+    padding: 19px 24px;
+    gap: 24px;
+    border-radius: 15px;
+    color: #A80CE8;
+    background-image: url(assets/Lupa.svg);
+    background-size: 32px;
+
+}
+
+.background { /*este es el fondo del header y aqui ponemos los padding*/
+    padding: 50px 60px;
+}
+
+.background__imagen {
+    background-image: url(assets/Home.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
