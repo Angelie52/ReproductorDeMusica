@@ -37,13 +37,23 @@ const CreateSongComponent = (SongData) => {
                             alt="Canción de ABBA, llamada Waterloo" class="main__card__imagen">
                         <div>
                             <p class="main__card__titulo">${SongData.title}</p>
-                            <p class="main__card__autor">${SongData.album}</p>
+                            <p class="main__card__autor">${SongData.author}</p>
                         </div>
                     </div>
                 </div>
     `
 
+    setInteractiveComponent(a, SongData)
     return a
+}
+
+const setInteractiveComponent = (component, SongData) => {
+    component.addEventListener('click', () => {
+        document.getElementById('audio').setAttribute('src', SongData.audio.url)
+        document.getElementById('image').setAttribute('src', SongData.image.url)
+        document.getElementById('title-song').innerHTML= SongData.title
+        document.getElementById('author-song').innerHTML = SongData.author
+    })
 }
 
 axios.get('https://api.institutoalfa.org/api/songs')
