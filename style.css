@@ -112,6 +112,10 @@
     background-color: #A80CE8;
 }
 
+.reproductor__icon {
+    cursor: pointer;
+}
+
 .main__card__sections {
     display: flex;
     flex-wrap: wrap;
